@@ -1,0 +1,21 @@
+{
+  "name": "saucedemo-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright E2E test suite for SauceDemo (Swag Labs) — Technical dimension",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --project=smoke",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:standard": "playwright test --project=standard-user",
+    "test:personas": "playwright test --project=locked-out-user --project=problem-user --project=performance-glitch-user --project=error-user --project=visual-user",
+    "setup": "playwright test --project=setup"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
