@@ -11,9 +11,9 @@ on:
     paths:
       - 'dimension-1-technical/**'
       - '.github/workflows/e2e.yml'
-  schedule:
+  #schedule:
     # Full suite daily at 06:00 UTC
-    - cron: '0 6 * * *'
+    #- cron: '0 6 * * *'
   workflow_dispatch:
     inputs:
       project:
